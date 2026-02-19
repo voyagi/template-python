@@ -1,0 +1,9 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  ci:
+    uses: voyagi/.github-workflows/.github/workflows/python-ci.yml@main
+    with:
+      dev-requirements-file: "requirements-dev.txt"
+      run-tests: true
+      run-mypy: true
