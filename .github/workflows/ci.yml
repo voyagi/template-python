@@ -7,3 +7,4 @@ jobs:
       dev-requirements-file: "requirements-dev.txt"
       run-tests: true
       run-mypy: true
+    secrets: inherit
